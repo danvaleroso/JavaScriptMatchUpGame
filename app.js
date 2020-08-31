@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         cardsChosen = [];
         cardsChosenId = [];
-        resultDisplay.textContent = cardsWon.length;
+        resultDisplay.textContent = `SCORE: ${cardsWon.length}`;
         if (cardsWon.length === cardArray.length/2) {
             resultDisplay.textContent = 'Congratulations! You found them all!';
         }
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cardsChosenId.push(cardId);
         this.setAttribute('src', cardArray[cardId].img);
         if (cardsChosen.length === 2) {
-            setTimeout(checkForMatch, 500);
+            setTimeout(checkForMatch, 100);
         }
     }
 

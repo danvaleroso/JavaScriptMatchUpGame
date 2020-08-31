@@ -1,6 +1,27 @@
+body {
+    font-family: sans-serif;
+    background-image: url(https://www.fun-stuff-to-do.com/images/Games-Fun.png);
+    background-color: cornsilk;
+    background-position: center;
+    background-size: cover;
+}
+#result {
+    text-align: center;
+    padding: 0;
+    margin: 5vh auto 3px auto;
+    font-size: 30px;
+    width: 400px;
+    background-color: rgb(92, 82, 69);
+    color: rgb(226, 198, 252);
+}
 .grid {
+    padding: 0;
     display: flex;
+    border: 20px solid rgba(178, 221, 149, 0.767);
     flex-wrap: wrap;
     height: 300px;
     width: 400px;
+    margin: 35vh auto auto auto;
+    text-align: center;
+    transform: translateY(-50%);
 }
